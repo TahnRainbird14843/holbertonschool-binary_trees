@@ -7,7 +7,7 @@
  * @argc: argument count
  * @argv: array of strings for arguments
  *
- * Return: result of operation, "Error" if an error occured
+ * Return: 0 on success, "Error" if an error occured
  */
 int main(int argc, char *argv[])
 {
@@ -32,4 +32,6 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", op_func(num1, num2));
+
+	return (0);
 }
