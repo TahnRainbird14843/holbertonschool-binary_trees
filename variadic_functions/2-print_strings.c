@@ -10,7 +10,7 @@
 int print_strings(const char *sep, const unsigned int n, ...)
 {
 	va_list args;
-	int i;
+	unsigned int i;
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
