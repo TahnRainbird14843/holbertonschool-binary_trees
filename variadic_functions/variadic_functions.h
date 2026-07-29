@@ -16,17 +16,17 @@
 typedef struct typ
 {
 	char ch;
-	int (*f)(char *s);
+	int (*f)(va_list);
 } typ_t;
 
 int sum_them_all(const unsigned int n, ...);
 int print_numbers(const char *sep, const unsigned int n, ...);
 int print_strings(const char *sep, const unsigned int n, ...);
 int print_all(const char *format, ...);
-int print_char(char *s);
-int print_int(char *s);
-int print_float(char *s);
-int print_string(char *s);
-int (*get_print_func(char c))(char *);
+int print_char(va_list args);
+int print_int(va_list args);
+int print_float(va_list args);
+int print_string(va_list args);
+int (*get_print_func(char c))(va_list);
 
 #endif

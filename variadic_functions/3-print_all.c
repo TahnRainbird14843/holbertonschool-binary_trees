@@ -6,9 +6,11 @@
  *
  * Return: 0 always
  */
-int print_char(char *s)
+int print_char(va_list args)
 {
-	printf("%s", s);
+	char c = va_arg(args, int);
+
+	printf("%c", c);
 
 	return (0);
 }
@@ -19,9 +21,9 @@ int print_char(char *s)
  *
  * Return: 0 always
  */
-int print_int(char *s)
+int print_int(va_list args)
 {
-	int n = atoi(s);
+	int n = va_arg(args, int);
 
 	printf("%d", n);
 	
@@ -34,9 +36,9 @@ int print_int(char *s)
  *
  * Return: 0 always
  */
-int print_float(char *s)
+int print_float(va_list args)
 {
-	float f = atof(s);
+	float f = va_arg(args, double);
 
 	printf("%f", f);
 
@@ -49,8 +51,10 @@ int print_float(char *s)
  *
  * Return: 0 always
  */
-int print_string(char *s)
+int print_string(va_list args)
 {
+	char *s = va_arg(args, char *);
+
 	if (s == NULL)
 	{
 		printf("(nil)");
@@ -63,37 +67,6 @@ int print_string(char *s)
 }
 
 /**
- * get_print_func - find print function for character input
- * @c: character input
- *
- * Return: print function, NULL on fail
- */
-int (*get_print_func(char c))(char *)
-{
-	typ_t types[5] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string},
-		{'\0', NULL}
-	};
-	int i = 0;
-
-	while (types[i].ch != '\0')
-	{
-		if (c = types[i].ch)
-		{
-			return (types[i].f);
-			break;
-		}
-
-		i++;
-	}
-
-	return (NULL);
-}
-
-/**
  * print_all - print a list of elements of variable types
  * @format: list of types of variables
  *
@@ -103,22 +76,38 @@ int print_all(const char *format, ...)
 {
 	int i = 0;
 	va_list args;
-	int (*print_func)(char *);
+	char *sep = "";
+	int j = 0;
+	typ_t types[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string}
+	};
 
 	va_start(args, format);
 
-	if (format == NULL)
-		return (0);
-
-	while (format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
-		print_func = get_print_func(format[i]);
+		j = 0;
 
-		if (print_func != NULL)
-			print_func(va_arg(args, char *));
+		while (j < 4)
+		{
+			if (format[i] == types[j].ch)
+			{
+				printf("%s", sep);
+				types[j].f(args);
+			}
 
+			j++;
+		}
+
+		sep = ", ";
 		i++;
 	}
+
+	printf("\n");
+	va_end(args);
 
 	return (0);
 }

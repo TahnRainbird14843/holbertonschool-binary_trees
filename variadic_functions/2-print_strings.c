@@ -23,7 +23,10 @@ int print_strings(const char *sep, const unsigned int n, ...)
 		va_copy(copy, args);
 
 		if (va_arg(copy, char *) == NULL)
+		{
 			va_arg(args, char *);
+			printf("(nil)");
+		}
 		else
 			printf("%s", va_arg(args, char *));
 	}
