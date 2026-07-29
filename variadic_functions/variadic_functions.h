@@ -7,12 +7,11 @@
 #include <stdlib.h>
 
 /**
- * struct typ - type structure includes character, 
+ * struct typ - type structure includes character,
  * identifier for printf and type
- * 
+ *
  * @ch: corresponding character (cifs)
- * @pr_ch: printf identifier (%d, %f, %c, %s)
- * @type: string for type
+ * @f: correpsonding function
  */
 typedef struct typ
 {

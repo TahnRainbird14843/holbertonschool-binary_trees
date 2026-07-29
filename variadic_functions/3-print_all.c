@@ -97,7 +97,7 @@ int print_all(const char *format, ...)
 			{
 				printf("%s", sep);
 				types[j].f(args);
-				sep = ", "
+				sep = ", ";
 			}
 
 			j++;
