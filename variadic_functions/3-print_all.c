@@ -2,7 +2,7 @@
 
 /**
  * print_char - print a character given as a string
- * @s: input string (one character)
+ * @args: input string (one character)
  *
  * Return: 0 always
  */
@@ -17,7 +17,7 @@ int print_char(va_list args)
 
 /**
  * print_int - print an int given as a string
- * @s: in put string
+ * @args: in put string
  *
  * Return: 0 always
  */
@@ -26,13 +26,13 @@ int print_int(va_list args)
 	int n = va_arg(args, int);
 
 	printf("%d", n);
-	
+
 	return (0);
 }
 
 /**
  * print_float - print a float given as a string
- * @s: input string
+ * @args: input string
  *
  * Return: 0 always
  */
@@ -47,7 +47,7 @@ int print_float(va_list args)
 
 /**
  * print_string - print a string
- * @s: input string
+ * @args: input string
  *
  * Return: 0 always
  */
@@ -97,12 +97,12 @@ int print_all(const char *format, ...)
 			{
 				printf("%s", sep);
 				types[j].f(args);
+				sep = ", "
 			}
 
 			j++;
 		}
 
-		sep = ", ";
 		i++;
 	}
 

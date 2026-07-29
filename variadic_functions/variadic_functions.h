@@ -7,7 +7,8 @@
 #include <stdlib.h>
 
 /**
- * struct typ - type structure includes character, identifier for printf and type
+ * struct typ - type structure includes character, 
+ * identifier for printf and type
  * 
  * @ch: corresponding character (cifs)
  * @pr_ch: printf identifier (%d, %f, %c, %s)
