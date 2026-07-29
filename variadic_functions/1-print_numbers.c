@@ -17,7 +17,7 @@ int print_numbers(const char *sep, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i != 0)
+		if (i != 0 && sep != NULL)
 			printf("%s", sep);
 
 		printf("%d", va_arg(args, int));
