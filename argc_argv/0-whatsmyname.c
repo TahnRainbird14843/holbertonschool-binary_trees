@@ -10,7 +10,7 @@
 int main(int __attribute__((unused)) argc, char *argv[])
 {
 	char *name = argv[0];
-	int i = 2;
+	int i = 0;
 
 	while (name[i] != '\0')
 		putchar(name[i++]);
