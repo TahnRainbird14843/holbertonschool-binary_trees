@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-static void dump_frame(const char *label, int depth)
+int dump_frame(const char *label, int depth)
 {
     int local_int = 100 + depth;
     char local_buf[16];
@@ -14,9 +14,11 @@ static void dump_frame(const char *label, int depth)
            (void *)&local_int, (void *)p_local, local_int);
     printf("  local_buf=%p  local_buf[0]=%c\n",
            (void *)local_buf, local_buf[0]);
+
+    return (0);
 }
 
-static void walk_stack(int depth, int max_depth)
+void walk_stack(int depth, int max_depth)
 {
     int marker = depth * 10;
     dump_frame("enter", depth);
