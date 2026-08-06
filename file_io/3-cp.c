@@ -56,6 +56,27 @@ int search_buffer(char *buffer)
 }
 
 /**
+ * _memset - implementation of memset
+ * @buffer: pointer to memory
+ * @value: value to be reset to
+ * @num: number of bytes to overwrite
+ *
+ * Return: 0 always.
+ */
+int _memset(char *buffer, char value, int num)
+{
+	int i = 0;
+
+	while (i < num)
+	{
+		buffer[i] = value;
+		i++;
+	}
+
+	return (0);
+}
+
+/**
  * main - entry point, copies a file (same as cp in terminal)
  * @argc: arg count
  * @argv: list of args
@@ -86,7 +107,7 @@ int main(int argc, char *argv[])
 		in = read(file_from, buffer, 1024);
 		len = search_buffer(buffer);
 		out = write(file_to, buffer, len);
-		memset(buffer, 0, 1024);
+		_memset(buffer, '\0', 1024);
 		if (in == -1)
 			throw_error(1, argv[1], 0);
 		if (out == -1)

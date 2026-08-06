@@ -13,5 +13,6 @@ int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
 int throw_error(int n, char *name, int num);
 int search_buffer(char *buffer);
+int _memset(char *buffer, char value, int num);
 
 #endif
