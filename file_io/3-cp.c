@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		while (i < 1024)
 		{
 			if (buffer[i] != '\0')
-				len = i;
+				len = i + 1;
 			i++;
 		}
 		out = write(file_to, buffer, len);
