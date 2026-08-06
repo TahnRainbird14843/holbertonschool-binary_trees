@@ -35,48 +35,6 @@ int throw_error(int n, char *name, int num)
 }
 
 /**
- * search_buffer - search a buffer for the last time a character appears
- * @buffer: buffer to search
- *
- * Return: length of string up to last non-null char
- */
-int search_buffer(char *buffer)
-{
-	int i = 0;
-	int len = 0;
-
-	while (i < 1024)
-	{
-		if (buffer[i] != '\0')
-			len = i + 1;
-		i++;
-	}
-
-	return (len);
-}
-
-/**
- * _memset - implementation of memset
- * @buffer: pointer to memory
- * @value: value to be reset to
- * @num: number of bytes to overwrite
- *
- * Return: 0 always.
- */
-int _memset(char *buffer, char value, int num)
-{
-	int i = 0;
-
-	while (i < num)
-	{
-		buffer[i] = value;
-		i++;
-	}
-
-	return (0);
-}
-
-/**
  * main - entry point, copies a file (same as cp in terminal)
  * @argc: arg count
  * @argv: list of args
@@ -89,7 +47,6 @@ int main(int argc, char *argv[])
 	int file_to;
 	ssize_t in;
 	ssize_t out;
-	int len = 1024;
 	char *buffer = malloc(1024);
 
 	if (argc != 3)
@@ -105,14 +62,12 @@ int main(int argc, char *argv[])
 
 	do {
 		in = read(file_from, buffer, 1024);
-		len = search_buffer(buffer);
-		out = write(file_to, buffer, len);
-		_memset(buffer, '\0', 1024);
+		out = write(file_to, buffer, in);
 		if (in == -1)
 			throw_error(1, argv[1], 0);
 		if (out == -1)
 			throw_error(2, argv[2], 0);
-	} while (len != 0);
+	} while (in == 1024);
 
 	free(buffer);
 
