@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
 
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
 		memset(buffer, 0, len);
 		if (in == -1)
 		{
-			dprintf(STDERR_FILENO, "Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 		if (out == -1)
 		{
-			dprintf(STDERR_FILENO, "Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	} while (len != 0);
@@ -61,12 +61,12 @@ int main(int argc, char *argv[])
 
 	if (close_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
 	if (close_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
 	}
 
