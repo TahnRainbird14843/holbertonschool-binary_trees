@@ -39,9 +39,10 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while (len != 0)
-	{
+	do {
 		in = read(file_from, buffer, 1024);
+		i = 0;
+		len = 0;
 		while (i < 1024)
 		{
 			if (buffer[i] != '\0')
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 			i++;
 		}
 		out = write(file_to, buffer, len);
-		memset(buffer, 0, len);
+		memset(buffer, 0, 1024);
 		if (in == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -60,7 +61,7 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	}
+	} while (len != 0);
 
 	free(buffer);
 	close_from = close(file_from);
