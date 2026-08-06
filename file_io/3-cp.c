@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 		{
 			if (buffer[i] != '\0')
 				len = i;
+			i++;
 		}
 		out = write(file_to, buffer, len);
 		memset(buffer, 0, len);
