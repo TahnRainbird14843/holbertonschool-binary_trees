@@ -8,10 +8,10 @@
  *
  * Return: 0 always
  */
-int throw_error(int n, char *name, int num);
+int throw_error(int n, char *name, int num)
 {
 	if (n == 0)
-        {
+	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
@@ -33,6 +33,7 @@ int throw_error(int n, char *name, int num);
 
 	return (0);
 }
+
 /**
  * search_buffer - search a buffer for the last time a character appears
  * @buffer: buffer to search
