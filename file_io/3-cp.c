@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	ssize_t in;
 	ssize_t out;
 	int len = 1024;
+	int i = 0;
 	char *buffer = malloc(1024);
 
 	if (argc != 3)
@@ -38,9 +39,14 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	do {
+	while (len != 0)
+	{
 		in = read(file_from, buffer, 1024);
-		len = strlen(buffer);
+		while (i < 1024)
+		{
+			if (buffer[i] != '\0')
+				len = i;
+		}
 		out = write(file_to, buffer, len);
 		memset(buffer, 0, len);
 		if (in == -1)
@@ -53,7 +59,7 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	} while (len != 0);
+	}
 
 	free(buffer);
 	close_from = close(file_from);
