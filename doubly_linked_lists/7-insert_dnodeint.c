@@ -16,11 +16,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 
 	if (new_node == NULL)
 		return (NULL);
-
 	new_node->n = n;
 	new_node->next = NULL;
 	new_node->prev = NULL;
-
 	if (head == NULL || (*head == NULL && idx != 0))
 	{
 		free(new_node);
@@ -46,6 +44,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 	if (curr_node->prev != NULL)
 		(curr_node->prev)->next = new_node;
 	curr_node->prev = new_node;
+	*head = new_node;
 
 	return (new_node);
 }
