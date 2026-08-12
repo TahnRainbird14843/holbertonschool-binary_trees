@@ -31,6 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			key_present = 0;
 			break;
 		}
+		i++;
 	}
 
 	if (key_present == 1)
