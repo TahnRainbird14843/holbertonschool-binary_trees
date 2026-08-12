@@ -8,9 +8,9 @@
  *
  * Return: 1 on success, 0 on failure
  */
-int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = hash_djb2(key) % ht->size;
+	unsigned long int index = hash_djb2((unsigned)key) % ht->size;
 	hash_node_t *new_node;
 
 	if (key == NULL || key == "")
