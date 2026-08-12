@@ -6,9 +6,9 @@
  *
  * Return: number of nodes
  */
-int print_dlistint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
-	int i = 0;
+	size_t i = 0;
 
 	if (h == NULL)
 		return (0);
