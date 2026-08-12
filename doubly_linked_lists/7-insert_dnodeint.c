@@ -29,10 +29,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 			i++;
 		}
 
-		if (i != idx)
+		if (idx > i + 1)
 			return (NULL);
 
-		else if (curr_node->next == NULL)
+		else if (idx == i + 1)
 			new_node = add_dnodeint_end(head, n);
 
 		else
