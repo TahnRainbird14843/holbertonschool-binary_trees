@@ -25,11 +25,11 @@ int hash_table_print(hash_table_t *ht)
 		{
 			if (first_call == 0)
 			{
-				printf("'%s' : '%s'", curr_node->key, curr_node->value);
+				printf("'%s': '%s'", curr_node->key, curr_node->value);
 				first_call = 1;
 			}
 			else
-				printf(", '%s' : '%s'", curr_node->key, curr_node->value);
+				printf(", '%s': '%s'", curr_node->key, curr_node->value);
 
 			curr_node = curr_node->next;
 		}
