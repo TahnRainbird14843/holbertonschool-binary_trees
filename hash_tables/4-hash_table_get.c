@@ -9,11 +9,14 @@
  */
 char *hash_table_get(hash_table_t *ht, const char *key)
 {
-	unsigned long int idx = hash_djb2((const unsigned char *)key) % ht->size;
-	hash_node_t *node = ht->array[idx];
+	unsigned long int idx;
+	hash_node_t *node;
 
 	if (key == NULL || ht == NULL)
 		return (NULL);
+
+	idx = hash_djb2((const unsigned char *)key) % ht->size;
+	node = ht->array[idx];
 
 	while (node != NULL)
 	{
