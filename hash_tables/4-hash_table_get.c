@@ -12,7 +12,7 @@ char *hash_table_get(hash_table_t *ht, const char *key)
 	unsigned long int idx = hash_djb2((const unsigned char *)key) % ht->size;
 	hash_node_t *node = ht->array[idx];
 
-	if (key == NULL)
+	if (key == NULL || ht == NULL)
 		return (NULL);
 
 	while (node != NULL)
