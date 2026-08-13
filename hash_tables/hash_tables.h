@@ -41,5 +41,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 char *hash_table_get(hash_table_t *ht, const char *key);
 int hash_table_print(hash_table_t *ht);
 int hash_table_delete(hash_table_t *ht);
+int chuck_a_fit(void *ptr1, void *ptr2);
 
 #endif

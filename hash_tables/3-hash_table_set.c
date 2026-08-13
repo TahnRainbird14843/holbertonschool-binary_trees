@@ -1,6 +1,23 @@
 #include "hash_tables.h"
 
 /**
+ * chuck_a_fit - throw a tantrum and free everything
+ * @ptr1: input 1
+ * @ptr2: input 2
+ *
+ * Return: 0 always
+ */
+int chuck_a_fit(void *ptr1, void *ptr2)
+{
+	if (str1 != NULL)
+		free(str1);
+	if (str2 != NULL)
+		free(str2);
+
+	return (0);
+}
+
+/**
  * hash_table_set - set a key-value pair in a hash table
  * @ht: pointer to hash table
  * @key: input key
@@ -39,10 +56,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_node->key = strdup(key);
 	if (new_node->key == NULL)
-		free(new_node); return (0);
+		return (chuck_a_fit(new_node, NULL));
 	new_node->value = strdup(value);
 	if (new_node->value == NULL)
-		free(new_node->key); free(new_node); return (0);
+		return (chuck_a_fit(new_node->key, new_node));
 
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
