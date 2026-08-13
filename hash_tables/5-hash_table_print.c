@@ -8,7 +8,7 @@
  */
 int hash_table_print(hash_table_t *ht)
 {
-	long unsigned int i = 0;
+	unsigned long int i = 0;
 	hash_node_t *curr_node;
 	int first_call = 0;
 
@@ -25,11 +25,11 @@ int hash_table_print(hash_table_t *ht)
 		{
 			if (first_call == 0)
 			{
-				printf("%s : %s", curr_node->key, curr_node->value);
+				printf("'%s' : '%s'", curr_node->key, curr_node->value);
 				first_call = 1;
 			}
 			else
-				printf(", %s : %s", curr_node->key, curr_node->value);
+				printf(", '%s' : '%s'", curr_node->key, curr_node->value);
 
 			curr_node = curr_node->next;
 		}
