@@ -10,9 +10,9 @@
 int chuck_a_fit(void *ptr1, void *ptr2)
 {
 	if (ptr1 != NULL)
-		free(str1);
+		free(ptr1);
 	if (ptr2 != NULL)
-		free(str2);
+		free(ptr2);
 
 	return (0);
 }
