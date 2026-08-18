@@ -1,1 +1,1 @@
-This is a repo for learning to code in C at holberton
+This repo is for learning binary trees in C
