@@ -137,3 +137,7 @@ vi 14-binary_tree_balance.c
 betty 14-binary_tree_balance.c
 vi 14-binary_tree_balance.c
 betty 14-binary_tree_balance.c
+git add .
+git commit -m "fixes"
+git push origin main
+vi 14-binary_tree_balance.c
