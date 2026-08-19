@@ -141,3 +141,7 @@ git add .
 git commit -m "fixes"
 git push origin main
 vi 14-binary_tree_balance.c
+git add .
+git commit -m "fix"
+git push origin main
+vi 14-binary_tree_balance.c

@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1787100019,,"wq"
+|2,0,1787100098,,"wq"
 :set nu
 |2,0,1787099704,,"set nu"
 :set nopaste
@@ -72,34 +72,54 @@
 |<"    sibling = binary_tree_sibling(root->right->left);","    printf(\"Sibling of %d: %d\\n\", root->right->left->n, sibling->n);","    sibling = binary_tree_sibling(root->left->right);","    printf(\"Sibling of %d: %d\\n\", root->left->right->n, sibling->n);","    sibling = binary_tree_sibling(root);","    printf(\"Sibling of %d: %p\\n\", root->n, (void *)sibling);","    return (0);","}"
 
 # File marks:
-'0  43  32  ~/14-binary_tree_balance.c
-|4,48,43,32,1787100019,"~/14-binary_tree_balance.c"
-'1  25  0  ~/14-binary_tree_balance.c
-|4,49,25,0,1787099710,"~/14-binary_tree_balance.c"
-'2  25  0  ~/14-binary_tree_balance.c
-|4,50,25,0,1787099710,"~/14-binary_tree_balance.c"
-'3  45  52  ~/14-binary_tree_balance.c
-|4,51,45,52,1787099687,"~/14-binary_tree_balance.c"
-'4  45  52  ~/14-binary_tree_balance.c
-|4,52,45,52,1787099687,"~/14-binary_tree_balance.c"
-'5  40  52  ~/14-binary_tree_balance.c
-|4,53,40,52,1787099687,"~/14-binary_tree_balance.c"
-'6  40  52  ~/14-binary_tree_balance.c
-|4,54,40,52,1787099687,"~/14-binary_tree_balance.c"
-'7  4  20  ~/9-binary_tree_height.c
-|4,55,4,20,1787099520,"~/9-binary_tree_height.c"
-'8  12  18  ~/8-binary_tree_postorder.c
-|4,56,12,18,1787099357,"~/8-binary_tree_postorder.c"
-'9  12  18  ~/7-binary_tree_inorder.c
-|4,57,12,18,1787099344,"~/7-binary_tree_inorder.c"
+'0  39  0  ~/14-binary_tree_balance.c
+|4,48,39,0,1787100098,"~/14-binary_tree_balance.c"
+'1  24  13  ~/14-binary_tree_balance.c
+|4,49,24,13,1787100085,"~/14-binary_tree_balance.c"
+'2  24  13  ~/14-binary_tree_balance.c
+|4,50,24,13,1787100085,"~/14-binary_tree_balance.c"
+'3  38  111  ~/14-binary_tree_balance.c
+|4,51,38,111,1787100019,"~/14-binary_tree_balance.c"
+'4  38  111  ~/14-binary_tree_balance.c
+|4,52,38,111,1787100019,"~/14-binary_tree_balance.c"
+'5  43  32  ~/14-binary_tree_balance.c
+|4,53,43,32,1787100019,"~/14-binary_tree_balance.c"
+'6  43  32  ~/14-binary_tree_balance.c
+|4,54,43,32,1787100019,"~/14-binary_tree_balance.c"
+'7  25  0  ~/14-binary_tree_balance.c
+|4,55,25,0,1787099710,"~/14-binary_tree_balance.c"
+'8  25  0  ~/14-binary_tree_balance.c
+|4,56,25,0,1787099710,"~/14-binary_tree_balance.c"
+'9  25  0  ~/14-binary_tree_balance.c
+|4,57,25,0,1787099710,"~/14-binary_tree_balance.c"
 
 # Jumplist (newest first):
+-'  39  0  ~/14-binary_tree_balance.c
+|4,39,39,0,1787100098,"~/14-binary_tree_balance.c"
+-'  24  13  ~/14-binary_tree_balance.c
+|4,39,24,13,1787100089,"~/14-binary_tree_balance.c"
+-'  24  13  ~/14-binary_tree_balance.c
+|4,39,24,13,1787100085,"~/14-binary_tree_balance.c"
+-'  38  111  ~/14-binary_tree_balance.c
+|4,39,38,111,1787100075,"~/14-binary_tree_balance.c"
+-'  43  32  ~/14-binary_tree_balance.c
+|4,39,43,32,1787100075,"~/14-binary_tree_balance.c"
 -'  43  32  ~/14-binary_tree_balance.c
 |4,39,43,32,1787100019,"~/14-binary_tree_balance.c"
 -'  25  0  ~/14-binary_tree_balance.c
 |4,39,25,0,1787099878,"~/14-binary_tree_balance.c"
 -'  25  0  ~/14-binary_tree_balance.c
+|4,39,25,0,1787099878,"~/14-binary_tree_balance.c"
+-'  25  0  ~/14-binary_tree_balance.c
+|4,39,25,0,1787099878,"~/14-binary_tree_balance.c"
+-'  25  0  ~/14-binary_tree_balance.c
 |4,39,25,0,1787099710,"~/14-binary_tree_balance.c"
+-'  40  52  ~/14-binary_tree_balance.c
+|4,39,40,52,1787099702,"~/14-binary_tree_balance.c"
+-'  45  52  ~/14-binary_tree_balance.c
+|4,39,45,52,1787099702,"~/14-binary_tree_balance.c"
+-'  40  52  ~/14-binary_tree_balance.c
+|4,39,40,52,1787099702,"~/14-binary_tree_balance.c"
 -'  45  52  ~/14-binary_tree_balance.c
 |4,39,45,52,1787099702,"~/14-binary_tree_balance.c"
 -'  40  52  ~/14-binary_tree_balance.c
@@ -112,6 +132,58 @@
 |4,39,1,0,1787099532,"~/14-binary_tree_balance.c"
 -'  1  0  ~/14-binary_tree_balance.c
 |4,39,1,0,1787099532,"~/14-binary_tree_balance.c"
+-'  1  0  ~/14-binary_tree_balance.c
+|4,39,1,0,1787099532,"~/14-binary_tree_balance.c"
+-'  1  0  ~/14-binary_tree_balance.c
+|4,39,1,0,1787099532,"~/14-binary_tree_balance.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
+-'  4  20  ~/9-binary_tree_height.c
+|4,39,4,20,1787099520,"~/9-binary_tree_height.c"
 -'  4  20  ~/9-binary_tree_height.c
 |4,39,4,20,1787099520,"~/9-binary_tree_height.c"
 -'  4  20  ~/9-binary_tree_height.c
@@ -160,149 +232,77 @@
 |4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
 -'  12  18  ~/8-binary_tree_postorder.c
 |4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  1  0  ~/8-binary_tree_postorder.c
-|4,39,1,0,1787099350,"~/8-binary_tree_postorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  12  18  ~/7-binary_tree_inorder.c
-|4,39,12,18,1787099344,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
--'  1  0  ~/7-binary_tree_inorder.c
-|4,39,1,0,1787099335,"~/7-binary_tree_inorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
+-'  12  18  ~/8-binary_tree_postorder.c
+|4,39,12,18,1787099357,"~/8-binary_tree_postorder.c"
 
 # History of marks within files (newest to oldest):
 
 > ~/14-binary_tree_balance.c
-	*	1787100018	0
-	"	43	32
-	^	43	33
-	.	43	32
-	+	46	0
+	*	1787100097	0
+	"	39	0
+	^	39	0
+	.	39	0
+	+	41	0
 	+	37	0
 	+	28	0
 	+	27	0
@@ -323,9 +323,12 @@
 	+	23	0
 	+	24	0
 	+	26	0
-	+	46	0
+	+	41	0
 	+	25	0
-	+	43	32
+	+	38	111
+	+	20	13
+	+	24	13
+	+	39	0
 
 > ~/9-binary_tree_height.c
 	*	1787099441	0
