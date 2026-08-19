@@ -124,3 +124,16 @@ betty 9-binary_tree_height.c
 betty binary_trees.h
 vi binary_trees.h
 betty binary_trees.h
+git add .
+git commit -m "finished code"
+git push origin main
+ls
+vi 16-binary_tree_is_perfect.c
+vi 6-binary_tree_preorder.c
+vi 7-binary_tree_inorder.c
+vi 8-binary_tree_postorder.c
+vi 9-binary_tree_height.c
+vi 14-binary_tree_balance.c
+betty 14-binary_tree_balance.c
+vi 14-binary_tree_balance.c
+betty 14-binary_tree_balance.c
